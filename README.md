@@ -83,6 +83,7 @@ lite-server
 
 Conectá tu wallet a Nitro local.
 
+* Name: Nitro Localhost
 * RPC Url: `http://localhost:8547`
 * Chain id: `412346`
 * Symbol: `ETH`

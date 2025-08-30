@@ -1,0 +1,17 @@
+[contract]
+address = "0x525c2aBA45F66987217323E8a05EA400C65D06DC"
+network = "arbitrum_nitro_devnet"
+rpc_url = "http://localhost:8547"
+
+[deployment]
+activation_tx_hash = "0x450d43f2c9295549ada7d9f3860c6d4baeba740dbc78e9bb8139560c007bd298"
+contract_size = "5.8 KiB (5972 bytes)"
+tx_hash = "0x60f99bb43d56d61eee174bfc05b9b37aa58f012b1a821d519663784cddf3cf14"
+wasm_data_fee = "0.000072 ETH (originally 0.000060 ETH with 20% bump)"
+wasm_size = "18.1 KiB (18561 bytes)"
+
+[functions]
+signatures = [
+    "function getSwordCounts() external view returns (uint256, uint256, uint256)",
+    "function incrementSword(uint256 color) external",
+]

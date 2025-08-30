@@ -1,6 +1,6 @@
 const NETWORK_ID = 412346
 
-const MY_CONTRACT_ADDRESS = "0xYOUR_CONTRACT_HERE"
+const MY_CONTRACT_ADDRESS = "0x3df948c956e14175f43670407d5796b95bb219d8"
 
 const MY_CONTRACT_ABI = [
   {
@@ -86,7 +86,7 @@ async function loadDapp() {
         });
       })()
     } else {
-      document.getElementById("web3_message").textContent="Please connect to Goerli";
+      document.getElementById("web3_message").textContent="Please connect to Localhost Nitro";
     }
   });
 }
@@ -112,7 +112,9 @@ const onContractInitCallback = async () => {
   document.getElementById("contract_state").textContent = contract_state;
 }
 
-const onWalletConnectedCallback = async () => {}
+const onWalletConnectedCallback = async () => {
+  console.log(accounts[0])
+}
 
 const incrementSword = async (color) => {
   const result = await my_contract.methods.incrementSword(color)
