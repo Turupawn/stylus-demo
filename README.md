@@ -92,3 +92,11 @@ Y agrega la private key con fondos:
 `0xb6b15c8cb491557369f3c7d2c287b053eb229daa9c22138887752191c9520659`
 
 Ahora estás listo para interactuar con el contrato en ambos el juego y la webapp.
+
+---
+
+Documentación:
+* [Stylus](https://docs.arbitrum.io/stylus/quickstart)
+* [Bevy](https://bevy.org/learn/)
+* [Solidity en 15 minutos](https://www.youtube.com/watch?v=SAQ5Cvt_ePg)
+* [Cómo crear un website](https://www.youtube.com/watch?v=7gg-bRGM_og&t=268s)
