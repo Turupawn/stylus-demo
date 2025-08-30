@@ -1,4 +1,4 @@
-
+![this link](link.png)
 
 **1. Lanzá el contrato**
 
@@ -19,7 +19,7 @@ rustup default 1.80
 rustup target add wasm32-unknown-unknown --toolchain 1.80
 ```
 
-Ahora core el dev-node.
+Ahora corré el dev-node.
 
 ```bash
 git clone https://github.com/OffchainLabs/nitro-devnode.git
@@ -27,7 +27,7 @@ cd nitro-devnode
 sh run-dev-node.sh
 ```
 
-Now deploy the contracts
+Ahora lanzá el contrato.
 
 ```bash
 cd contracts
@@ -61,6 +61,12 @@ cargo run
 
 
 **3. Corré la webapp**
+
+Colocá el contrato en el archivo `website/blockchain_stuff.js`. Por ejemplo:
+
+```
+const MY_CONTRACT_ADDRESS = "0x525c2aba45f66987217323e8a05ea400c65d06dc"
+```
 
 Instalá un servidor web, te recomiendo lite-server.
 

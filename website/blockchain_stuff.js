@@ -1,8 +1,7 @@
 const NETWORK_ID = 412346
 
-const MY_CONTRACT_ADDRESS = "0x525c2aba45f66987217323e8a05ea400c65d06dc"
+const MY_CONTRACT_ADDRESS = "0xYOUR_CONTRACT_HERE"
 
-// Hardcoded ABI
 const MY_CONTRACT_ABI = [
   {
     "inputs": [{ "internalType": "uint256", "name": "color", "type": "uint256" }],
@@ -100,7 +99,6 @@ async function connectWallet() {
 
 loadDapp()
 
-// ========== Callbacks ==========
 const onContractInitCallback = async () => {
   let red = await my_contract.methods.getSwordCount(0).call()
   let blue = await my_contract.methods.getSwordCount(1).call()
@@ -116,7 +114,6 @@ const onContractInitCallback = async () => {
 
 const onWalletConnectedCallback = async () => {}
 
-// ========== Functions ==========
 const incrementSword = async (color) => {
   const result = await my_contract.methods.incrementSword(color)
     .send({ from: accounts[0], gas: 0, value: 0 })
