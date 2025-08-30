@@ -1,0 +1,13 @@
+[package]
+name = "game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.14"
+ethers = "2.0"
+stylus-sdk = { version = "0.6.0", features = ["debug"] }
+tokio = { version = "1", features = ["full"] }
+dotenv = "0.15"
+eyre = "0.6"
+rand = "0.8"
